@@ -1,4 +1,20 @@
 # Arkansas Innovation Hub Cooperative
+
+## Table of Contents
+
+### Documentation
+- [Governance](governance.md)
+- [Revenue Model](revenue_model.md)
+- [Programming](programming.md)
+- [Staffing](staffing.md)
+- [Marketing & Outreach](marketing_outreach.md)
+- [Fundraising & Partnerships](fundraising_partnerships.md)
+- [Debt Management](debt_management.md)
+
+### Financial Data
+- [Hub Budget Comparison](data/Hub_Budget_Comparison.xlsx)
+- [Arkansas Hub Cooperative Pro Forma](data/Arkansas_Hub_Cooperative_Pro_Forma.xlsx)
+
 ## Project Overview
 
 ### Mission & Vision
