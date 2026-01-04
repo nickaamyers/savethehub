@@ -27,7 +27,7 @@ The Arkansas Innovation Hub Cooperative aims to restore and sustain the Arkansas
 
 ### Problem Statement
 
-The Arkansas Regional Innovation Hub, built in 2015 with $3.5 million in federal EDA funding, was closed by the North Little Rock Public Library System due to financial unsustainability. The closure eliminated critical maker education and entrepreneurship support services in a region with limited alternatives. The facility remains underutilized despite its significant federal investment and strategic location in the revitalizing Argenta Arts District.
+The Arkansas Regional Innovation Hub, built in 2015 with $3.5 million including federal EDA funding, was closed by the North Little Rock Public Library System due to financial unsustainability. The closure eliminated critical maker education and entrepreneurship support services in a region with limited alternatives. The facility remains underutilized despite its significant federal investment and strategic location in the revitalizing Argenta Arts District.
 
 ### Solution: Community Cooperative Model
 
@@ -37,9 +37,9 @@ The cooperative model addresses the sustainability challenges that led to the Li
 
 **Community Ownership**: Members have ownership stakes and governance participation, creating stronger investment and engagement than traditional nonprofit models.
 
-**Reduced Operating Costs**: Lean staffing with revenue-sharing educator compensation models reduces overhead while maintaining service quality.
+**Reduced Operating Costs**: Lean staffing with revenue-sharing educator compensation models reduces overhead while maintaining service quality and increases compensation for staff.
 
-**Federal Compliance**: The cooperative structure maintains EDA economic development requirements while enabling long-term community stewardship.
+**Federal Compliance**: The cooperative structure maintains EDA economic development requirements while enabling long-term community stewardship of the building.
 
 ### Key Objectives
 
@@ -67,12 +67,12 @@ The cooperative model addresses the sustainability challenges that led to the Li
 **Location**: 201 E. Broadway, North Little Rock, AR 72114 (Argenta Arts District)
 
 **Facility Size**: 22,000 sq ft across two buildings
-- Maker Lab: Woodworking, metalworking, 3D printing, laser cutting
+- Maker Lab: Woodworking, metalworking, 3D printing, laser cutting, pottery
 - Classroom Spaces: Multiple rooms for workshops and training
 - Event Space: Conference room and collaborative areas
 - Office Space: Administrative and meeting areas
 
-**Current Status**: Owned by Winrock International, leased to entities potentially not in EDA compliance
+**Current Status**: Owned by Winrock International who is placing on the market and not interested in a lease.
 
 ### Target Populations
 
@@ -91,7 +91,7 @@ The cooperative model addresses the sustainability challenges that led to the Li
 
 ### Competitive Advantages
 
-1. **Federal Investment**: $3.5M facility already built and equipped
+1. **Federal Investment**: $3.5M facility already built and equipped (If the NLR Library returns equipment)
 2. **Strategic Location**: Downtown Argenta revival area with growing arts/maker community
 3. **Educational Gap**: Limited maker education options in Central Arkansas
 4. **EDA Designation**: Economic development mission aligns with federal and state priorities
