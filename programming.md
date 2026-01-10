@@ -47,6 +47,8 @@ This model incentivizes instructor excellence while maintaining Hub financial su
 - *3D Printing Basics*: CAD design intro, printer operation, print take-home project
 - *Metalworking Essentials*: Welding basics, metal forming, create wall art
 - *Sewing & Textiles*: Industrial sewing machines, pattern reading, make a tote bag
+- *Glass Works*: Including stained glass, fusing, and much more
+- *Pottery*: Hand building, wheel, everything that was offer before
 - *Electronics & Arduino*: Circuits, programming, build a smart home device
 
 #### Weeknight Classes (2-3 hours)
@@ -62,6 +64,8 @@ This model incentivizes instructor excellence while maintaining Hub financial su
 - *CNC Router Workshop*: CAM software, toolpath creation, carving project
 - *Leatherworking*: Hand tools, stitching, create a leather wallet
 - *Screen Printing*: Emulsion process, multi-color printing, design t-shirt
+- *Glass Works*: Including stained glass, fusing, and much more
+- *Pottery*: Hand building, wheel, everything that was offer before
 
 #### Intensive Courses (2-3 sessions, multi-week)
 **Schedule**: Consecutive weeks, 3-4 hours per session
@@ -75,6 +79,8 @@ This model incentivizes instructor excellence while maintaining Hub financial su
 - *CNC Certification* (2 weeks): Safe operation, programming, independent project
 - *Entrepreneurship Bootcamp* (3 weeks): Business planning, prototyping, pitch preparation
 - *Metal Sculpture* (3 weeks): Welding, forming, finishing, create wall or floor sculpture
+- *Glass Works*: Including stained glass, fusing, and much more
+- *Pottery*: Hand building, wheel, everything that was offer before
 
 ### Instructor Recruitment & Development
 
@@ -149,6 +155,8 @@ This model incentivizes instructor excellence while maintaining Hub financial su
 - 3D printing toys and gadgets
 - Woodworking small projects
 - Screen printing t-shirts and bags
+- *Glass Works*: Including stained glass, fusing, and much more
+- *Pottery*: Hand building, wheel, everything that was offer before
 
 ### Summer Camps
 
