@@ -1,6 +1,6 @@
 ---
 title: "New Website Launch"
-date: 2025-01-11
+date: 2026-01-11
 description: "Welcome to the new Arkansas Innovation Hub website"
 ---
 
