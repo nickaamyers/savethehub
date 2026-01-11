@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming - Arkansas Innovation Hub</title>
+    <meta name="description" content="Educational programs, workshops, and activities at the Arkansas Innovation Hub">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --earth-brown: #6B4423;
+            --forest-green: #2D5016;
+            --workshop-orange: #E86A33;
+            --clay-red: #C44536;
+            --wheat-gold: #D4AF37;
+            --canvas-white: #FAF9F6;
+            --charcoal: #2C2C2C;
+            --steel-gray: #5A6B7D;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Crimson Pro', serif;
+            color: var(--charcoal);
+            background: var(--canvas-white);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--earth-brown) 0%, var(--forest-green) 100%);
+            color: var(--canvas-white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            color: var(--canvas-white);
+        }
+        
+        .logo img {
+            height: 60px;
+            width: auto;
+            background: white;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        
+        .logo-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--canvas-white);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--wheat-gold);
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, var(--clay-red) 0%, var(--workshop-orange) 100%);
+            color: var(--canvas-white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        
+        .page-header p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .content-section {
+            background: white;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--forest-green);
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid var(--workshop-orange);
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--earth-brown);
+            margin: 2rem 0 1rem;
+        }
+        
+        p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        
+        ul, ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+        
+        li {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 0.8rem;
+        }
+        
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .program-card {
+            background: var(--canvas-white);
+            padding: 2rem;
+            border-top: 5px solid var(--workshop-orange);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .program-card h4 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            color: var(--forest-green);
+            margin-bottom: 1rem;
+        }
+        
+        .program-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(45, 80, 22, 0.1), rgba(107, 68, 35, 0.1));
+            border-left: 5px solid var(--forest-green);
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        footer {
+            background: var(--charcoal);
+            color: var(--canvas-white);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .content-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="assets/images/hubLogo.jpg" alt="Innovation Hub Logo">
+                <span class="logo-text">Arkansas Innovation Hub</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="governance.html">Governance</a></li>
+                <li><a href="revenue-model.html">Financials</a></li>
+                <li><a href="programming.html">Programming</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>Programs & Activities</h1>
+        <p>Hands-on learning experiences in making, agriculture, and arts for all ages and skill levels</p>
+    </div>
+
+    <main>
+        <section class="content-section">
+            <h2>Educational Philosophy</h2>
+            <p>The Arkansas Innovation Hub provides experiential, project-based learning that develops practical skills, creative confidence, and entrepreneurial thinking. Programs span STEAM education, agricultural innovation, artistic expression, and maker culture—all designed to empower Arkansans to learn, build, grow, and create.</p>
+            
+            <div class="highlight-box">
+                <strong>Core Approach:</strong> Learning by doing. Students engage directly with tools, materials, and processes rather than passive instruction. Instructors serve as facilitators and mentors, guiding discovery rather than lecturing.
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Youth Programming</h2>
+            
+            <div class="program-grid">
+                <div class="program-card">
+                    <div class="program-icon">🏫</div>
+                    <h4>School District Field Trips</h4>
+                    <p><strong>Grades K-12</strong></p>
+                    <p>2-3 hour visits aligned with state education standards. Students experience hands-on projects in robotics, laser cutting, 3D printing, woodworking, and more.</p>
+                    <ul>
+                        <li>Transportation grants available</li>
+                        <li>Arkansas LEARNS credit eligible</li>
+                        <li>Customizable to grade level</li>
+                    </ul>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-icon">📚</div>
+                    <h4>After-School Programs</h4>
+                    <p><strong>Ages 8-18</strong></p>
+                    <p>8-week sessions meeting twice weekly. Students develop projects from concept to completion across multiple disciplines.</p>
+                    <ul>
+                        <li>Robotics & Coding</li>
+                        <li>Digital Fabrication</li>
+                        <li>Arts & Crafts</li>
+                        <li>Urban Agriculture</li>
+                    </ul>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-icon">☀️</div>
+                    <h4>Summer Camps</h4>
+                    <p><strong>Ages 7-17</strong></p>
+                    <p>Week-long intensive camps exploring specific topics. Daily 9am-3pm with lunch provided.</p>
+                    <ul>
+                        <li>Maker Camp (all skills)</li>
+                        <li>Robotics & Game Design</li>
+                        <li>Young Farmers Camp</li>
+                        <li>Arts & Fabrication</li>
+                    </ul>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-icon">🏠</div>
+                    <h4>Homeschool Programs</h4>
+                    <p><strong>All Ages</strong></p>
+                    <p>Flexible scheduling for homeschool families. Arkansas LEARNS/EFA eligible. Single classes or semester-long programs.</p>
+                    <ul>
+                        <li>STEAM curriculum alignment</li>
+                        <li>Parent participation welcome</li>
+                        <li>Flexible attendance</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Adult Education</h2>
+            
+            <h3>Skills Workshops</h3>
+            <p>Single-session and multi-week classes teaching practical making skills:</p>
+            
+            <div class="program-grid">
+                <div class="program-card">
+                    <h4>Fabrication Skills</h4>
+                    <ul>
+                        <li>Woodworking Basics</li>
+                        <li>Welding & Metalworking</li>
+                        <li>Laser Cutting & Engraving</li>
+                        <li>3D Printing & CAD Design</li>
+                        <li>CNC Routing</li>
+                    </ul>
+                </div>
+                
+                <div class="program-card">
+                    <h4>Arts & Crafts</h4>
+                    <ul>
+                        <li>Pottery & Ceramics</li>
+                        <li>Jewelry Making</li>
+                        <li>Screen Printing</li>
+                        <li>Fiber Arts & Sewing</li>
+                        <li>Glasswork</li>
+                    </ul>
+                </div>
+                
+                <div class="program-card">
+                    <h4>Agriculture</h4>
+                    <ul>
+                        <li>Urban Farming Basics</li>
+                        <li>Market Gardening</li>
+                        <li>Season Extension</li>
+                        <li>Soil Health & Composting</li>
+                        <li>Food Preservation</li>
+                    </ul>
+                </div>
+                
+                <div class="program-card">
+                    <h4>Entrepreneurship</h4>
+                    <ul>
+                        <li>Starting a Maker Business</li>
+                        <li>Product Development</li>
+                        <li>Marketing & Sales</li>
+                        <li>Online Store Setup</li>
+                        <li>Licensing & Insurance</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Professional Development</h3>
+            <ul>
+                <li><strong>STEAM Teacher Training:</strong> Workshops for K-12 educators integrating maker activities into curriculum</li>
+                <li><strong>Technical Certifications:</strong> Industry-recognized credentials in welding, CAD, and fabrication</li>
+                <li><strong>Continuing Education:</strong> Classes eligible for professional development credit</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Community Programs</h2>
+            
+            <h3>Open Make Nights</h3>
+            <p>Free community access every Thursday 6-9pm. Bring your project, get help from staff and fellow members, use equipment with supervision.</p>
+
+            <h3>Maker Markets</h3>
+            <p>Monthly marketplace featuring local artisans, farmers, and makers. Free to attend, vendor fees support Hub operations.</p>
+
+            <h3>Speaker Series & Demos</h3>
+            <p>Monthly presentations by makers, artists, entrepreneurs, and innovators. Free admission, open to public.</p>
+
+            <h3>Girls in STEAM</h3>
+            <p>Monthly program for girls ages 10-16 featuring female role models in science, technology, engineering, arts, and agriculture.</p>
+
+            <h3>Growing Urban Farmers</h3>
+            <p>Comprehensive agricultural entrepreneurship program operated by St. Joseph Center, teaching market farming, business skills, and food systems.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Specialized Programming</h2>
+            
+            <h3>Corporate Team Building</h3>
+            <p>Custom workshops for businesses developing team cohesion through collaborative making projects. 2-4 hour sessions for groups of 10-50.</p>
+
+            <h3>Accessibility Programs</h3>
+            <p>Adapted making experiences for individuals with disabilities. Assistive technologies, specialized instruction, sensory-friendly sessions available.</p>
+
+            <h3>Senior Programs</h3>
+            <p>Classes designed for active older adults learning new skills, staying engaged, and connecting with community. Discounted rates available.</p>
+
+            <h3>Veteran Services</h3>
+            <p>Free or discounted access for veterans transitioning to civilian careers. Focus on entrepreneurship, technical skills, and peer support.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Facility Access Programs</h2>
+            
+            <h3>Open Shop Time</h3>
+            <p>Members access facilities during staffed hours with minimal supervision. Equipment training required before independent use.</p>
+
+            <h3>Private Studio Rentals</h3>
+            <p>Artists and entrepreneurs rent dedicated workspace by month. Access to shared equipment, utilities included.</p>
+
+            <h3>Event Space Rental</h3>
+            <p>Meeting rooms, gallery space, and workshop areas available for private events, corporate meetings, non-profit gatherings.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Curriculum Approach</h2>
+            
+            <h3>Age-Appropriate Progression</h3>
+            <ul>
+                <li><strong>Ages 7-10:</strong> Exploration and discovery, basic tool use, safety fundamentals</li>
+                <li><strong>Ages 11-14:</strong> Skill development, project-based learning, design thinking</li>
+                <li><strong>Ages 15-18:</strong> Advanced techniques, entrepreneurial projects, portfolio development</li>
+                <li><strong>Adults:</strong> Practical skills, business applications, personal projects</li>
+            </ul>
+
+            <h3>Safety & Supervision</h3>
+            <p>All programs emphasize safe tool use and proper technique:</p>
+            <ul>
+                <li>Staff-to-student ratios: 1:8 for youth, 1:12 for adults</li>
+                <li>Equipment certifications required for advanced tools</li>
+                <li>Safety orientations mandatory for all participants</li>
+                <li>Age restrictions on certain equipment (e.g., no youth under 16 on welders)</li>
+            </ul>
+
+            <h3>Inclusive Design</h3>
+            <p>Programs welcome participants regardless of income, race, gender, ability, or background. Scholarship assistance available for all paid programs.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Program Calendar</h2>
+            
+            <h3>Academic Year (September-May)</h3>
+            <ul>
+                <li>School field trips: Tuesday-Thursday, 9am-2pm</li>
+                <li>After-school programs: Monday-Thursday, 3:30-5:30pm</li>
+                <li>Adult workshops: Various evenings and weekends</li>
+                <li>Open make nights: Thursdays, 6-9pm</li>
+            </ul>
+
+            <h3>Summer (June-August)</h3>
+            <ul>
+                <li>Summer camps: Monday-Friday, week-long sessions</li>
+                <li>Adult intensive workshops: Weekend formats</li>
+                <li>Expanded open shop hours</li>
+                <li>Special events and maker faires</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>Registration:</strong> Program registration opens 6 weeks before session start. Early registration discounts available. Scholarships by application.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Arkansas Innovation Hub Cooperative | <a href="index.html" style="color: var(--wheat-gold);">Home</a> | <a href="contact.html" style="color: var(--wheat-gold);">Contact</a></p>
+    </footer>
+</body>
+</html>

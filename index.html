@@ -57,8 +57,24 @@
         }
         
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            color: var(--canvas-white);
+        }
+        
+        .logo img {
+            height: 60px;
+            width: auto;
+            background: white;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        
+        .logo-text {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 800;
             letter-spacing: -0.5px;
         }
@@ -500,6 +516,14 @@
                 display: none;
             }
             
+            .logo-text {
+                display: none;
+            }
+            
+            .logo img {
+                height: 50px;
+            }
+            
             .cta-section h2 {
                 font-size: 2rem;
             }
@@ -509,7 +533,10 @@
 <body>
     <header>
         <nav>
-            <div class="logo">Arkansas Innovation Hub</div>
+            <a href="index.html" class="logo">
+                <img src="assets/images/hubLogo.jpg" alt="Innovation Hub Logo">
+                <span class="logo-text">Arkansas Innovation Hub</span>
+            </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#mission">Mission</a></li>
