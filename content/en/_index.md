@@ -5,7 +5,7 @@ title: "Arkansas Innovation Hub"
 {{< blocks/cover title="Restoring Arkansas's Premier Community Innovation Center" image_anchor="top" height="full" color="primary" >}}
 <div class="mx-auto">
 	<p class="lead mt-4" style="font-size: 2rem; font-weight: 600;">Learn • Build • Grow • Create</p>
-	<p class="lead mt-4">Community-owned cooperative combining makerspace, agricultural innovation, and arts support.</p>
+	<p class="lead mt-4">Community-owned cooperative combining makerspace, agricultural, innovation, and arts.</p>
 	<a class="btn btn-lg btn-warning me-3 mb-4" href="/get-involved/contact/">
 		Join the Cooperative <i class="fas fa-users ms-2"></i>
 	</a>
@@ -16,7 +16,7 @@ title: "Arkansas Innovation Hub"
 {{< /blocks/cover >}}
 
 {{% blocks/lead color="dark" %}}
-When the Arkansas Regional Innovation Hub closed on December 31st, 2024, it left a gap in our community. But this isn't the end—it's a new beginning.
+When the Arkansas Regional Innovation Hub closed on December 31st, 2025, it left a gap in our community. But this isn't the end—it's a new beginning.
 
 We're acquiring the building and reopening it as a **community-owned cooperative**.
 {{% /blocks/lead %}}
