@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkansas Innovation Hub - Community-Owned Makerspace, Agriculture & Arts Center</title>
+    <meta name="description" content="Restoring Arkansas's premier makerspace as a community-owned cooperative. Learn, Build, Grow, and Create in North Little Rock's Argenta District.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --earth-brown: #6B4423;
+            --forest-green: #2D5016;
+            --workshop-orange: #E86A33;
+            --clay-red: #C44536;
+            --wheat-gold: #D4AF37;
+            --canvas-white: #FAF9F6;
+            --charcoal: #2C2C2C;
+            --steel-gray: #5A6B7D;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Crimson Pro', serif;
+            color: var(--charcoal);
+            background: var(--canvas-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--earth-brown) 0%, var(--forest-green) 100%);
+            color: var(--canvas-white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--canvas-white);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--wheat-gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--forest-green) 0%, var(--earth-brown) 100%);
+            color: var(--canvas-white);
+            padding: 6rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 60px,
+                    rgba(255,255,255,0.02) 60px,
+                    rgba(255,255,255,0.02) 120px
+                );
+        }
+        
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 4.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -2px;
+        }
+        
+        .hero .tagline {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--wheat-gold);
+            margin-bottom: 2rem;
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin-bottom: 2.5rem;
+            line-height: 1.7;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        .btn-primary {
+            background: var(--workshop-orange);
+            color: white;
+            box-shadow: 0 4px 15px rgba(232, 106, 51, 0.3);
+        }
+        
+        .btn-primary:hover {
+            background: var(--clay-red);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(196, 69, 54, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--canvas-white);
+            border: 2px solid var(--wheat-gold);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--wheat-gold);
+            color: var(--charcoal);
+        }
+        
+        /* Stats Bar */
+        .stats {
+            background: var(--charcoal);
+            color: var(--canvas-white);
+            padding: 3rem 2rem;
+        }
+        
+        .stats-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+        
+        .stat-item {
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+        }
+        
+        .stat-item:nth-child(1) { animation-delay: 0.1s; }
+        .stat-item:nth-child(2) { animation-delay: 0.2s; }
+        .stat-item:nth-child(3) { animation-delay: 0.3s; }
+        .stat-item:nth-child(4) { animation-delay: 0.4s; }
+        
+        .stat-number {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--wheat-gold);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: var(--steel-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        
+        /* Mission Section */
+        .mission {
+            padding: 6rem 2rem;
+            background: white;
+        }
+        
+        .mission-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .mission-image {
+            background: var(--steel-gray);
+            height: 500px;
+            border-radius: 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 20px 20px 0 var(--forest-green);
+        }
+        
+        .mission-image::before {
+            content: 'ADD YOUR HUB PHOTO HERE';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        
+        .mission-content h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--forest-green);
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+        }
+        
+        .mission-content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: var(--charcoal);
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, var(--workshop-orange), var(--clay-red));
+            color: white;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-left: 5px solid var(--wheat-gold);
+        }
+        
+        .highlight-box h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        
+        /* Three Pillars */
+        .pillars {
+            padding: 6rem 2rem;
+            background: var(--canvas-white);
+        }
+        
+        .pillars-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .pillars h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            color: var(--forest-green);
+            margin-bottom: 4rem;
+        }
+        
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+        
+        .pillar-card {
+            background: white;
+            padding: 3rem;
+            border-top: 5px solid var(--workshop-orange);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .pillar-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+        
+        .pillar-card:nth-child(2) {
+            border-top-color: var(--forest-green);
+        }
+        
+        .pillar-card:nth-child(3) {
+            border-top-color: var(--clay-red);
+        }
+        
+        .pillar-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .pillar-card h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+        
+        .pillar-card p {
+            font-size: 1.1rem;
+            color: var(--steel-gray);
+            line-height: 1.7;
+        }
+        
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(135deg, var(--workshop-orange) 0%, var(--clay-red) 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%);
+        }
+        
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-section h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+        }
+        
+        .cta-section p {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.7;
+        }
+        
+        .cta-section .btn {
+            background: white;
+            color: var(--workshop-orange);
+            font-size: 1.2rem;
+            padding: 1.2rem 3rem;
+        }
+        
+        .cta-section .btn:hover {
+            background: var(--wheat-gold);
+            color: var(--charcoal);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--charcoal);
+            color: var(--canvas-white);
+            padding: 3rem 2rem 1rem;
+        }
+        
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--wheat-gold);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: var(--steel-gray);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: var(--wheat-gold);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--steel-gray);
+            color: var(--steel-gray);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1.3rem;
+            }
+            
+            .mission-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .mission-image {
+                height: 300px;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Arkansas Innovation Hub</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#pillars">What We Do</a></li>
+                <li><a href="governance.html">Governance</a></li>
+                <li><a href="revenue-model.html">Financials</a></li>
+                <li><a href="#get-involved">Get Involved</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Restoring Arkansas's Premier Community Innovation Center</h1>
+            <p class="tagline">Learn • Build • Grow • Create</p>
+            <p>The Arkansas Innovation Hub is returning as a community-owned cooperative—combining makerspace, agricultural innovation, and arts support to empower entrepreneurs, students, and creatives across Arkansas.</p>
+            <div class="cta-buttons">
+                <a href="#get-involved" class="btn btn-primary">Join the Cooperative</a>
+                <a href="#mission" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number">22,000</span>
+                <span class="stat-label">Square Feet</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">$3.5M</span>
+                <span class="stat-label">Federal Investment</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">$419K</span>
+                <span class="stat-label">Annual Earned Income</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Community Owned</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="mission" class="mission">
+        <div class="mission-container">
+            <div class="mission-image">
+                <!-- Replace this div with an actual image -->
+                <!-- <img src="assets/images/hub-exterior.jpg" alt="Arkansas Innovation Hub Building"> -->
+            </div>
+            <div class="mission-content">
+                <h2>A New Vision for Community Innovation</h2>
+                <p>When the Arkansas Regional Innovation Hub closed its doors on December 31st, 2024, it left a gap in our community. But this isn't the end—it's a new beginning.</p>
+                <p>We're acquiring the building and reopening it as a community-owned cooperative, ensuring the facility serves Arkansas for generations to come. Our model combines the original makerspace mission with agricultural innovation and arts support, creating something unprecedented in our state.</p>
+                <div class="highlight-box">
+                    <h3>Why Community Ownership Matters</h3>
+                    <p>The cooperative model creates sustainable funding through earned income, gives members a voice in governance, and ensures the Hub serves community needs—not grant cycles or external agendas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pillars" class="pillars">
+        <div class="pillars-container">
+            <h2>Three Pillars, One Vision</h2>
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-icon">🔧</div>
+                    <h3>Makers & Innovators</h3>
+                    <p>Access to fabrication tools, prototyping equipment, and technical expertise. From 3D printing to woodworking, laser cutting to welding—build your ideas with professional-grade equipment and community support.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">🌱</div>
+                    <h3>Farmers & Food Entrepreneurs</h3>
+                    <p>Urban farming education, market gardening training, and an exclusive Arkansas-grown marketplace. We connect growers with tools, knowledge, and markets to build viable agricultural enterprises.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">🎨</div>
+                    <h3>Artists & Creatives</h3>
+                    <p>Studio space, gallery exhibitions, and direct market access through maker markets and retail opportunities. Create your art and build a sustainable creative career—all under one roof.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="mission" style="background: white;">
+        <div class="mission-container">
+            <div class="mission-content">
+                <h2>Our Story</h2>
+                <p>The Arkansas Regional Innovation Hub opened in 2014 with $3.5 million in federal EDA funding, serving as Central Arkansas's premier makerspace. For a decade, it provided STEAM education, supported entrepreneurs, and fostered creative community.</p>
+                <p>When the North Little Rock Public Library System closed the Hub due to financial constraints, the community rallied. Led by founding members and board leadership from St. Joseph Center of Arkansas, we're bringing the Hub back—better, stronger, and truly community-owned.</p>
+                <p><strong>Location:</strong> 204 E. 4th Street, North Little Rock, AR 72114 (Argenta Arts District)</p>
+                <p><strong>Building:</strong> 22,000 sq ft facility including maker labs, classrooms, event space, and future agricultural operations</p>
+            </div>
+            <div class="mission-image">
+                <!-- Replace this div with an actual image -->
+                <!-- <img src="assets/images/hub-interior.jpg" alt="Innovation Hub Workshop"> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="get-involved" class="cta-section">
+        <div class="cta-content">
+            <h2>Be Part of Something Bigger</h2>
+            <p>The Hub belongs to the community—and we need your support to make this vision a reality. Whether you want to become a member, volunteer, partner, or donate, there's a place for you.</p>
+            <a href="contact.html" class="btn">Join the Movement</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Arkansas Innovation Hub</h3>
+                <p>204 E. 4th Street<br>
+                North Little Rock, AR 72114</p>
+                <p>Argenta Arts District</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="governance.html">Governance</a>
+                <a href="revenue-model.html">Revenue Model</a>
+                <a href="programming.html">Programming</a>
+                <a href="staffing.html">Staffing</a>
+            </div>
+            <div class="footer-section">
+                <h3>Get Involved</h3>
+                <a href="contact.html">Contact Us</a>
+                <a href="fundraising-partnerships.html">Partnerships</a>
+                <a href="https://github.com/sshellabarger/savethehub" target="_blank">View on GitHub</a>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <a href="https://www.facebook.com/ARInnovationHub" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/armakehub" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Arkansas Innovation Hub Cooperative. Building community through making, growing, and creating.</p>
+        </div>
+    </footer>
+</body>
+</html>
