@@ -31,6 +31,9 @@ disableLanguages = []
   languageName = "English"
   weight = 1
   title = "Arkansas Innovation Hub"
+
+# FIXED: Move description to params
+[languages.en.params]
   description = "Community-owned makerspace, agriculture, and arts center in North Little Rock, Arkansas"
 
 # Markup settings
