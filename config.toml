@@ -1,7 +1,6 @@
 baseURL = 'https://savethehub.org/'
 languageCode = 'en-us'
 title = 'Arkansas Innovation Hub'
-# theme = 'docsy'
 
 # Enable GitInfo for last modified dates
 enableGitInfo = true
