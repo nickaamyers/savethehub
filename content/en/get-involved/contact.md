@@ -12,7 +12,7 @@ weight: 1
 North Little Rock, AR 72114  
 Argenta Arts District
 
-**Email:** info@savethehub.org
+**Email:** savethehub@protonmail.com
 
 **Project Repository:** [github.com/sshellabarger/savethehub](https://github.com/sshellabarger/savethehub)
 
@@ -23,13 +23,13 @@ Argenta Arts District
 ## Project Leadership
 
 **Scott Shellabarger**  
-Board Chair, St. Joseph Center of Arkansas  
+Board of Directors, St. Joseph Center of Arkansas  
 Founding Member, Arkansas Innovation Hub
 
 ## Express Interest
 
 To get involved:
-1. Email us at info@savethehub.org
+1. Email us at savethehub@protonmail.com
 2. Open an issue on [GitHub](https://github.com/sshellabarger/savethehub/issues)
 3. Connect on [Facebook](https://www.facebook.com/ARInnovationHub)
 
