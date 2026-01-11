@@ -1,0 +1,12 @@
+{
+  "name": "savethehub",
+  "version": "1.0.0",
+  "description": "Arkansas Innovation Hub website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["hugo", "docsy"],
+  "author": "Arkansas Innovation Hub",
+  "license": "MIT"
+}
