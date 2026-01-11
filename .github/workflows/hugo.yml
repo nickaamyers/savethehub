@@ -23,7 +23,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.139.3
+      HUGO_VERSION: 0.140.2
     steps:
       - name: Install Hugo CLI
         run: |
@@ -47,9 +47,6 @@ jobs:
       
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      
-      - name: Clean Hugo module cache
-        run: hugo mod clean
       
       - name: Download Hugo modules
         run: hugo mod get
