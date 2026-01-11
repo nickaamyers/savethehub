@@ -2,6 +2,9 @@ baseURL = 'https://savethehub.org/'
 languageCode = 'en-us'
 title = 'Arkansas Innovation Hub'
 
+# Using Hugo Modules instead of theme directory
+# theme = 'docsy'
+
 # Enable GitInfo for last modified dates
 enableGitInfo = true
 
@@ -30,10 +33,9 @@ disableLanguages = []
   languageName = "English"
   weight = 1
   title = "Arkansas Innovation Hub"
-
-# FIXED: Move description to params
-[languages.en.params]
-  description = "Community-owned makerspace, agriculture, and arts center in North Little Rock, Arkansas"
+  
+  [languages.en.params]
+    description = "Community-owned makerspace, agriculture, and arts center in North Little Rock, Arkansas"
 
 # Markup settings
 [markup]
@@ -47,41 +49,43 @@ disableLanguages = []
 [params]
   description = "The Arkansas Innovation Hub is a community-owned cooperative combining makerspace, agricultural innovation, and arts support to empower entrepreneurs, students, and creatives across Arkansas."
   copyright = "Arkansas Innovation Hub Cooperative"
-
+  
   # Privacy settings
   privacy_policy = "https://savethehub.org/privacy/"
-
+  
   # Repository information
   github_repo = "https://github.com/sshellabarger/savethehub"
   github_project_repo = "https://github.com/sshellabarger/savethehub"
   github_branch = "main"
-
+  
   # Enable Git info for showing last updated dates
   github_subdir = ""
   time_format_blog = "Monday, January 02, 2006"
   time_format_default = "January 2, 2006"
-
+  
   # RSS
   rss_sections = ["blog"]
-
+  
   # UI Configuration
   [params.ui]
     sidebar_menu_compact = true
     sidebar_search_disable = false
     navbar_logo = true
     navbar_translucent_over_cover_disable = false
-    footer_about_disable = false
-
+    
+    # FIXED: Use footer_about_enable instead of deprecated footer_about_disable
+    footer_about_enable = true
+    
     # Feedback
     [params.ui.feedback]
       enable = true
       yes = 'Glad to hear it! Please <a href="https://github.com/sshellabarger/savethehub/issues/new">tell us how we can improve</a>.'
       no = 'Sorry to hear that. Please <a href="https://github.com/sshellabarger/savethehub/issues/new">tell us how we can improve</a>.'
-
+    
     # Readability
     [params.ui.readingtime]
       enable = true
-
+  
   # Links shown in the footer
   [params.links]
     [[params.links.user]]
@@ -110,34 +114,10 @@ disableLanguages = []
       icon = "fa fa-users"
       desc = "Join the cooperative"
 
-# Main menu
-[menu]
-  [[menu.main]]
-    name = "About"
-    weight = 10
-    url = "/about/"
-  [[menu.main]]
-    name = "Financials"
-    weight = 20
-    url = "/financials/"
-  [[menu.main]]
-    name = "Programming"
-    weight = 30
-    url = "/programming/"
-  [[menu.main]]
-    name = "Operations"
-    weight = 40
-    url = "/operations/"
-  [[menu.main]]
-    name = "Get Involved"
-    weight = 50
-    url = "/get-involved/"
-  [[menu.main]]
-    name = "News"
-    weight = 60
-    url = "/blog/"
+# REMOVED: Main menu entries (they're defined in content front matter)
+# This prevents duplicate menu entries
 
-# Module configuration
+# Module configuration - This loads Docsy theme
 [module]
   [module.hugoVersion]
     extended = true
