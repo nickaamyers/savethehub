@@ -44,7 +44,7 @@ disableLanguages = []
       unsafe = true
   [markup.highlight]
     style = "tango"
-
+    
 # Site params
 [params]
   description = "The Arkansas Innovation Hub is a community-owned cooperative combining makerspace, agricultural innovation, and arts support to empower entrepreneurs, students, and creatives across Arkansas."
@@ -72,6 +72,9 @@ disableLanguages = []
     sidebar_search_disable = false
     navbar_logo = true
     navbar_translucent_over_cover_disable = false
+
+  [params.logos]
+    navbar = "images/hubLogo.jpg"    # Logo path
     
     # FIXED: Use footer_about_enable instead of deprecated footer_about_disable
     footer_about_enable = true
