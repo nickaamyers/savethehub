@@ -3,7 +3,6 @@ languageCode = 'en-us'
 title = 'Arkansas Innovation Hub'
 
 # Using Hugo Modules instead of theme directory
-# theme = 'docsy'
 
 # Enable GitInfo for last modified dates
 enableGitInfo = true
