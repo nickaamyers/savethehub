@@ -1,6 +1,6 @@
 baseURL = 'https://savethehub.org/'
 languageCode = 'en-us'
-title = 'Arkansas Innovation Hub'
+title = 'Save The Arkansas Innovation Hub'
 
 # Using Hugo Modules instead of theme directory
 
@@ -50,7 +50,7 @@ disableLanguages = []
   copyright = "Arkansas Innovation Hub Cooperative"
   
   # Privacy settings
-  privacy_policy = "https://savethehub.org/privacy/"
+  # privacy_policy = "https://savethehub.org/privacy/"
   
   # Repository information
   github_repo = "https://github.com/sshellabarger/savethehub"

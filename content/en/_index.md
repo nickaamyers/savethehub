@@ -6,11 +6,8 @@ title: "Save the Arkansas Innovation Hub"
 <div class="mx-auto">
 	<p class="lead mt-4" style="font-size: 2rem; font-weight: 600;">Learn • Make • Grow </p>
 	<p class="lead mt-4">Community-owned cooperative combining makerspace, agricultural, innovation, and arts.</p>
-	<a class="btn btn-lg btn-warning me-3 mb-4" href="/contact/">
+	<a class="btn btn-lg btn-warning me-3 mb-4" href="http://eepurl.com/jwh0Wo">
 		Join the Cooperative <i class="fas fa-users ms-2"></i>
-	</a>
-	<a class="btn btn-lg btn-secondary me-3 mb-4" href="/about/">
-		Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 	</a>
 </div>
 {{< /blocks/cover >}}
@@ -22,22 +19,6 @@ We want to acquiring the building and reopening it as a **community-owned cooper
 {{% /blocks/lead %}}
 
 {{< blocks/section color="white" type="row" >}}
-
-{{% blocks/feature icon="fa-wrench" title="22,000 sq ft" %}}
-State-of-the-art facility in North Little Rock's Argenta Arts District
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fa-dollar-sign" title="$3.5M Community Investment" %}}
-That Should Continue to Serve
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fa-dollar-sign" title="Earned Income" %}}
-Core operations funded by services and not grant dependent
-{{% /blocks/feature %}}
-
-{{< /blocks/section >}}
-
-{{< blocks/section color="primary" type="row" >}}
 
 {{% blocks/feature icon="fa-lightbulb" title="Makers & Innovators" %}}
 Fabrication tools, prototyping equipment, and technical expertise
@@ -51,4 +32,52 @@ Urban farming education and Arkansas-grown marketplace
 Studio space, equipment, and market access
 {{% /blocks/feature %}}
 
+{{< /blocks/section >}}
+
+{{< blocks/section color="primary" type="row" >}}
+
+{{% blocks/feature icon="fa-users" title="Governance" url="https://github.com/sshellabarger/savethehub/blob/main/governance.md" %}}
+Learn about our cooperative structure, board composition, and democratic decision-making processes
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-chalkboard-teacher" title="Programming" url="https://github.com/sshellabarger/savethehub/blob/main/programming.md" %}}
+Explore our educational programs, from adult classes to youth camps and fabrication services
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-dollar-sign" title="Revenue Model" url="https://github.com/sshellabarger/savethehub/blob/main/revenue_model.md" %}}
+See how earned income and diverse revenue streams create financial sustainability
+{{% /blocks/feature %}}
+
+{{< /blocks/section >}}
+
+{{< blocks/section color="dark" type="row" >}}
+
+{{% blocks/feature icon="fa-users-cog" title="Staffing Plan" url="https://github.com/sshellabarger/savethehub/blob/main/staffing.md" %}}
+Review our team structure, compensation model, and hiring strategy
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-handshake" title="Partnerships" url="https://github.com/sshellabarger/savethehub/blob/main/fundraising_partnerships.md" %}}
+Discover foundation and corporate partnership opportunities
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-bullhorn" title="Marketing & Outreach" url="https://github.com/sshellabarger/savethehub/blob/main/marketing_outreach.md" %}}
+Learn about our community engagement and growth strategies
+{{% /blocks/feature %}}
+
+{{< /blocks/section >}}
+
+
+{{< blocks/section color="secondary" >}}
+<div class="text-center">
+<h2 class="mb-4">Get Involved</h2>
+<p class="lead mb-5">Join us in saving this vital community resource</p>
+<div class="d-flex flex-wrap justify-content-center gap-3">
+	<a class="btn btn-lg btn-light" href="https://github.com/sshellabarger/savethehub" target="_blank" rel="noopener">
+		<i class="fab fa-github me-2"></i>View on GitHub
+	</a>
+	<a class="btn btn-lg btn-warning" href="http://eepurl.com/jwh0Wo" target="_blank" rel="noopener">
+		<i class="fas fa-envelope me-2"></i>Subscribe to Newsletter
+	</a>
+</div>
+</div>
 {{< /blocks/section >}}
