@@ -13,7 +13,7 @@ title: "Save the Arkansas Innovation Hub"
 {{< /blocks/cover >}}
 
 {{% blocks/lead color="dark" %}}
-When the Arkansas Regional Innovation Hub closed on December 31st, 2026, it left a gap in our community. But this isn't the end, it's a chance for a new beginning.
+When the Arkansas Regional Innovation Hub closed on December 31st, 2025, it left a gap in our community. But this isn't the end, it's a chance for a new beginning.
 
 We want to acquiring the building and reopening it as a **community-owned cooperative**.
 {{% /blocks/lead %}}
