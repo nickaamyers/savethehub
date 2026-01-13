@@ -22,4 +22,3 @@ Over the coming weeks, we'll be sharing updates on:
 
 Stay tuned for more news!
 
-**Want to get involved?** [Contact us](/get-involved/contact/) to learn more about membership, volunteering, or partnerships.
