@@ -3,6 +3,7 @@
 ## Table of Contents
 
 ### Documentation
+- [History](hubhistory.md)
 - [Governance](governance.md)
 - [Revenue Model](revenue_model.md)
 - [Programming](programming.md)
