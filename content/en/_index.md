@@ -9,6 +9,9 @@ title: "Save the Arkansas Innovation Hub"
 	<a class="btn btn-lg btn-warning me-3 mb-4" href="http://eepurl.com/jwh0Wo">
 		Join the Cooperative <i class="fas fa-users ms-2"></i>
 	</a>
+	<a class="btn btn-lg btn-warning me-3 mb-4" href="https://www.zeffy.com/en-US/donation-form/relaunch-the-hub">
+		Donate <i class="fas fa-users ms-2"></i>
+	</a>
 </div>
 {{< /blocks/cover >}}
 
