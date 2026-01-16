@@ -1,6 +1,6 @@
 ---
 title: "Community Meeting Recap - Thank You and Next Steps"
-date: 2025-01-16
+date: 2026-01-16
 draft: false
 description: "Thank you to everyone who attended our first community meeting. Here's what happened and how you can get involved in relaunching the Arkansas Regional Innovation Hub."
 ---
